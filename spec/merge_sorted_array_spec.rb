@@ -20,4 +20,12 @@ RSpec.describe MergeSortedArray do
     n = 0
     expect(merge_sorted_array.merge(nums1, m, nums2, n)).to eq([1])
   end
+
+  it 'can merge an array when the first is empty' do
+    nums1 = [0]
+    m = 0
+    nums2 = [1]
+    n = 1
+    expect(merge_sorted_array.merge(nums1, m, nums2, n)).to eq([1])
+  end
 end
